@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginHorizontal="40dp"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/middleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text="chosen file: 512ko"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/downloadProgress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middleTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:visibility="visible" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fileSpinner"
+        android:layout_below="@id/downloadProgress"
+        android:entries="@array/fileSpinner"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/downloadBindButton"
+        android:text="bind service"
+        android:layout_below="@id/fileSpinner"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/downloadButton"
+        android:text="download File"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/downloadBindButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloadButton">
+
+    </Button>
+
+
+</RelativeLayout>

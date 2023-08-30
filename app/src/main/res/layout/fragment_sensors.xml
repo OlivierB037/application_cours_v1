@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SensorsFragment"
+    android:layout_marginHorizontal="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/sensorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="list all sensors"
+        android:layout_below="@id/sensorText"
+        android:id="@+id/sensorListButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change sensor"
+        android:layout_below="@id/sensorListButton"
+        android:id="@+id/sensorButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="move ball"
+        android:layout_below="@id/sensorButton"
+        android:id="@+id/moveButton"/>
+    <LinearLayout
+        android:id="@+id/sensorDrawLayout"
+        android:layout_below="@id/moveButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200">
+        <fr.cnam.application_cours_v1.DrawView
+            android:id="@+id/sensorDraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

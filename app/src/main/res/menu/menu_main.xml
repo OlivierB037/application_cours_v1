@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="OpenClassroom.application_cours_version_6.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/app_settings"
+        android:orderInCategory="99"
+        android:title="@string/app_settings"
+        app:showAsAction="never"/>
+    <item
+        android:title="@string/map_item_title"
+        android:id="@+id/map_item"
+        android:orderInCategory="98"
+        android:icon="@android:drawable/ic_dialog_map"
+        app:showAsAction="always"
+        />
+
+</menu>

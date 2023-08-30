@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginHorizontal="50dp"
+    tools:context=".MainActivity"
+    >
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:id="@+id/textfrag2"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"/>
+    <ToggleButton
+        android:layout_below="@id/textfrag2"
+        android:padding="20dp"
+        android:id="@+id/togglebutt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>  -->
+
+    <ImageButton
+        android:id="@+id/imagebutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/spongebob_hangover_s" />
+    <Button
+        android:id="@+id/createFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagebutt"
+        android:text="nouveau fichier"/>
+    <Button
+        android:id="@+id/openButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/createFile"
+        android:text="ouvrir fichier"
+        android:onClick="requestFilePermission"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonnext2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/frag2menuButton"
+        android:layout_marginBottom="30dp"
+        android:text="suivant"/>
+
+    <Button
+        android:id="@+id/frag2menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="menu" />
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFrag">
+
+    <fragment
+        android:id="@+id/menuFrag"
+        android:name="OpenClassroom.application_cours_version_6.MenuFragment"
+        android:label="@string/menu_fragment_label"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/menuToFragment1"
+            app:destination="@id/Fragment1"/>
+        <action
+            android:id="@+id/menuToFragment2"
+            app:destination="@id/Fragment2"/>
+        <action
+            android:id="@+id/menuToFragment3"
+            app:destination="@id/Fragment3"/>
+        <action
+            android:id="@+id/menuToFragment4"
+            app:destination="@id/Fragment4"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/Fragment1"
+        android:name="OpenClassroom.application_cours_version_6.Fragment1"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_1">
+        <action
+            android:id="@+id/Fragment1toFragment2"
+            app:destination="@id/Fragment2"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/Fragment2"
+        android:name="OpenClassroom.application_cours_version_6.Fragment2"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_2">
+        <action
+            android:id="@+id/Fragment2toMenu"
+            app:destination="@id/menuFrag"/>
+        <action
+            android:id="@+id/Fragment2toFragment3"
+            app:destination="@id/Fragment3"/>
+    </fragment>
+    <fragment
+        android:id="@+id/Fragment3"
+        android:name="OpenClassroom.application_cours_version_6.Fragment3"
+        android:label="@string/third_fragment_label"
+        tools:layout="@layout/fragment_3">
+
+    </fragment>
+    <fragment
+        android:id="@+id/Fragment4"
+        android:name="OpenClassroom.application_cours_version_6.ThreadFragment"
+        android:label="@string/fourth_fragment_label"
+        tools:layout="@layout/fragment_thread">
+        <action
+            android:id="@+id/Fragment4toMenu"
+            app:destination="@id/menuFrag"/>
+    </fragment>
+</navigation>

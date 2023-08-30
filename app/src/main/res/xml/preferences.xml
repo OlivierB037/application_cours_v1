@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Paramètres">
+        <ListPreference
+            android:title="Theme"
+            android:entries="@array/themeList"
+            android:entryValues="@array/themeList"
+            android:defaultValue="@string/theme_light"
+            android:key="theme"
+            android:summary="%s"/>
+        <EditTextPreference
+            android:title="map search"
+            android:defaultValue="New-York"
+            android:key="mapsearch"
+            android:summary="choose map search"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Setting tests">
+        <SeekBarPreference
+            android:key="seek"
+            android:title="seek bar"/>
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

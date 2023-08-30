@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Tools and titles -->
+
+    <string name="app_name">application cours</string>
+    <string name="action_settings">Phone Settings</string>
+    <string name="app_settings">App settings</string>
+    <string name="map_item_title">Map</string>
+
+    <!-- fragment labels -->
+
+    <string name="menu_fragment_label">Menu</string>
+    <string name="first_fragment_label">Actions Fragment</string>
+    <string name="second_fragment_label">Intent Fragment</string>
+    <string name="third_fragment_label">Service Fragment</string>
+    <string name="basic_service_label">Basic Service</string>
+    <string name="fourth_fragment_label">Thread Fragment</string>
+    <string name="fifth_fragment_label">Broadcast Fragment</string>
+    <string name="sixth_fragment_label">Sensors Fragment</string>
+    <!-- themes -->
+
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- ID's -->
+
+    <item name="textview1" type="id" />
+    <item name="edittext1" type="id" />
+    <item name="frame" type="id" />
+
+    <!-- arrays (spinners) -->
+
+    <string-array name="themeList">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+    </string-array>
+    <string-array name="fileSpinner">
+        <item>512 Ko file</item>
+        <item>1024 Ko file</item>
+        <item>2048 Ko file</item>
+        <item>8192 Ko file</item>
+        <item>16384 Ko file</item>
+        <item>32768 Ko file</item>
+        <item>65536 Ko file</item>
+    </string-array>
+
+    <!-- displayed Strings  -->
+    <string name="multitouch_text">touchez la zone verte avec deux doigts</string>
+    <string name="Local_receiver_hint">Toast message from basic receiver</string>
+
+
+    <!-- reminder -->
+    <string name="large_text">
+        "A FAIRE.\n\n\n"
+
+        "* tester HandlerThread et Handler.Callback. \n\n"
+        "* tester AsyncTask \n\n"
+        "* tester AIDL. \n\n"
+        "* Lire cours Loaders \n\n"
+        "* Broadcas receiver pour appeler app sqLite \n\n "
+        "* trouver cours async await \n\n"
+        "* LocalBroadcastManager deprecated -> tester LiveData \n\n"
+        "* broadcast receivers in manifest after api 26 : \n"
+        "\t - job schedulers \n"
+        "\t - WorkManager \n\n"
+        "* tester differentes organisations tablette/telephone \n\n"
+        "- lire cours DAO openclassroom \n\n"
+        "- approfondir data (uri et scheme) \n\n"
+        "- room api for databases \n\n"
+        "- lire manage all files on storage device (storage) \n\n"
+        "-voir pendingIntents (+ notification setContentIntent)  \n\n"
+        "- voir Context.USB_SERVICE (UsbManager) \n\n"
+        "- voir classLoaders \n\n"
+        "-voir android.view.InputMethod \n\n"
+        "-voir Gestures \n\n"
+        "-voir classes URL et Jar URL \n\n"
+        "-voir intent action TEXT_PROCESS \n\n"
+        "-voir zoom et focus \n\n"
+        "- voir suggestionAdapter et CursorAdapter (présents dans SearchView) \n\n"
+        "- voir NetworkCallBack \n\n"
+        "-  \n\n"
+        "-  \n\n"
+        "-  \n\n"
+        "-  \n\n"
+        "-  \n\n"
+        "-  \n\n"
+        "-  \n\n"
+
+
+
+    </string>
+    <string name="broadcast_local_button">broadcast locally</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

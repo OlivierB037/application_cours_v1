@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="30dp"
+    tools:context=".Fragments.Fragment3">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="services locaux"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/basicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic local service"
+        android:layout_marginTop="40dp"
+
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intentServiceToastButton"
+        android:text="Intent service toast"
+        android:layout_below="@id/basicButton"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intentServiceLogButton"
+        android:text="Intent service log"
+        android:layout_below="@id/intentServiceToastButton"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/centerTextView"
+        android:layout_marginVertical="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="bound services"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intentServiceLogButton"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boundButton"
+        android:layout_below="@id/centerTextView"
+        android:layout_centerHorizontal="true"
+        android:text="start bound service"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bindToastButton"
+        android:layout_below="@id/boundButton"
+        android:layout_centerHorizontal="true"
+        android:text="toast bound service"/>
+
+    <TextView
+        android:id="@+id/boundIntentServiceTextView"
+        android:layout_marginVertical="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="messenger bound service"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bindToastButton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bindIntentServiceButton"
+        android:layout_below="@id/boundIntentServiceTextView"
+        android:layout_centerHorizontal="true"
+        android:text="start bound intent service"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toastIntentServiceButton"
+        android:layout_below="@id/bindIntentServiceButton"
+        android:layout_centerHorizontal="true"
+        android:text="send message to service"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifIntentServiceButton"
+        android:layout_below="@id/toastIntentServiceButton"
+        android:layout_centerHorizontal="true"
+        android:text="start notification"/>
+
+
+</RelativeLayout>
